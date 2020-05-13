@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
 <%_ if (jhipsterMajorVersion > 4) { _%>
-import { UserRouteAccessService } from 'app/core';
+import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 <%_ } else { _%>
 import { UserRouteAccessService } from '../../shared';
 <%_ } _%>
