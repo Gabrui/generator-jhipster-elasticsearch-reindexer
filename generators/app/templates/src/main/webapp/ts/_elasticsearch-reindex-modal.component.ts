@@ -14,7 +14,7 @@ export class ElasticsearchReindexModalComponent {
         public activeModal: NgbActiveModal
     ) { }
 
-    reindex() {
+    reindex() : void {
         this.elasticsearchReindexService.reindex().subscribe(() => this.activeModal.dismiss());
     }
 }
