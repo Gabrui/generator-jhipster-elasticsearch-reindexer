@@ -54,7 +54,7 @@ export class ElasticsearchReindexComponent {
     showConfirmSelected() {
         const activeModal = this.modalService.open(ElasticsearchReindexSelectedModalComponent);
         const checks = this.checks;
-        const reindexList = this.entities.filter(function(name) {
+        const reindexList = this.entities.filter(function(name) : boolean {
             return checks[name];
         });
         activeModal.componentInstance.entities = reindexList;
